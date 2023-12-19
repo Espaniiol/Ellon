@@ -5,9 +5,9 @@ import './index.css'
 import{createBrowserRouter,RouterProvider} from 'react-router-dom'
 
 import Bitcoin from './routes/Bitcoin/Bitcoin'
-import App from './App'
 import ErrorPage from './routes/ErrorPage'
 import Convert from './routes/Convert/Convert'
+import App from './App'
 
 const router = createBrowserRouter([
     

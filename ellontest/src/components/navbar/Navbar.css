@@ -1,12 +1,16 @@
-
 nav {
-  background-color: #2c7cf3;
+  background-color: #538ee6;
   padding: 10px;
   text-align: center;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+nav:hover {
+  background-color: #6ca4ec;
 }
 
 nav a {
@@ -15,5 +19,9 @@ nav a {
   margin: 0 15px;
   font-size: 16px;
   font-weight: bold;
+  transition: color 0.3s ease; 
 }
 
+nav a:hover {
+  color: #3700ff; 
+}

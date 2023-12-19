@@ -1,39 +1,54 @@
-  h2 {
-    position: fixed;
-    top: 0;
-    font-size: 50px;
-    color: #1a1d22;
-    font-weight: bold;
-    margin-top: 50px;
-  }
+h2 {
+  position: fixed;
+  top: 0;
+  font-size: 50px;
+  transform: translateX(-50%);
+  color: #1a1d22;
+  font-weight: bold;
+  text-align: center; 
+  box-shadow: 0px 0px 10px rgba(0, 140, 255, 0.24); 
+  width: 100%;
+}
   
-  label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
-  }
-  
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 20px;
+}
 
-  .currency-container {
-    display: flex;
-    gap: 10px;
-  }
-  
-  .currency-container label,
-  .currency-container select {
-    flex: 1; 
-  }
-  
-  select {
-    width: 100%;
-    padding: 8px;
-    
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  p {
-    font-size: 18px;
-    margin-top: 20px;
-    font-weight: bold;
-  }
+.currency-container {
+  display: flex;
+  gap: 10px;
+}
+
+select,
+input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  border-color: #1a1d22;
+  text-align: center;
+  font-weight: bold;
+}
+
+select {
+  border: 1px solid #000000;
+  background-color: #8db9fc; 
+  color: #000000; 
+}
+
+input {
+  border: 1px solid #ccc;
+  background-color: #8db9fc;
+  color: #000000;
+  margin-bottom: 50px;
+  width: 730px;
+}
+
+p {
+  font-size: 22px;
+  margin-top: 20px;
+  font-weight: bold;
+}

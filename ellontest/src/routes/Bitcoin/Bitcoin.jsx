@@ -19,7 +19,7 @@ const Bitcoin = () => {
         const change = lastValue - firstValue;
         setPriceChange(change);
       } catch (error) {
-        console.error('Error fetching Bitcoin data:', error);
+        console.error('Erro:', error);
       }
     };
 
@@ -28,16 +28,15 @@ const Bitcoin = () => {
 
   return (
     <div>
-      <h2>Bitcoin Atualizado</h2>
+      <h2>Bitcoin Cotação Atual</h2>
       <div>
-       <p>
-         Valor atual (em Dolar) : {currentPrice} USD
-           <br />
-           <br />
-         Variação de valor (Ultimos 5 dias) : {priceChange !== null ? priceChange.toFixed(2) : 'Loading'} USD
+        <p>
+          Valor atual (em Dolar): {currentPrice !== null ? currentPrice.toLocaleString('en-US', { style: 'currency', currency: 'USD' }) : 'Loading'}
+          <br />
+          <br />
+          Variação de valor (Últimos 5 dias): ${priceChange !== null ? priceChange.toFixed(2).toLocaleString('en-US', { style: 'currency', currency: 'USD' }) : 'Loading'}
         </p>
       </div>
-
     </div>
   );
 };

@@ -7,7 +7,6 @@ const Navbar = () => {
         
         <nav>
             <Link to="/bitcoin">Cotação Bitcoin</Link>
-            <Link to="/">Pagina Inicial</Link>
             <Link to="/convert">Converter Moeda</Link> 
         </nav>
         

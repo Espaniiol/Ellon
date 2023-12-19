@@ -39,10 +39,10 @@ const Convert = () => {
           const data = await response.json();
           setExchangeRates(data.quotes);
         } else {
-          console.error('Failed to fetch exchange rates');
+          console.error('Erro');
         }
       } catch (error) {
-        console.error('Error:', error);
+        console.error('Erro:', error);
       }
     };
 
@@ -75,13 +75,13 @@ const Convert = () => {
       <h2>Converter Moeda</h2>
       <div>
         <label>
-          Quantidade:
+          Valor:
         </label>
         <input type="number" value={amount} onChange={handleAmountChange} />
       </div>
       <div className="currency-container">
         <label>
-          Moeda de origem:
+         Selecione a moeda de Origem:
           <select value={fromCurrency} onChange={handleFromCurrencyChange}>
             {currencies.map((currency) => (
               <option key={currency} value={currency}>
@@ -91,7 +91,7 @@ const Convert = () => {
           </select>
         </label>
         <label>
-          Moeda de destino:
+          Selecione a moeda de destino:
           <select value={toCurrency} onChange={handleToCurrencyChange}>
             {currencies.map((currency) => (
               <option key={currency} value={currency}>
