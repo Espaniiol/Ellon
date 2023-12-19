@@ -4,10 +4,10 @@ import './index.css'
 
 import{createBrowserRouter,RouterProvider} from 'react-router-dom'
 
-import Bitcoin from './routes/Bitcoin.jsx'
-import Converter from './routes/Converter.jsx'
+import Bitcoin from './routes/Bitcoin/Bitcoin'
 import App from './App'
 import ErrorPage from './routes/ErrorPage'
+import Convert from './routes/Convert/Convert'
 
 const router = createBrowserRouter([
     
@@ -21,8 +21,8 @@ const router = createBrowserRouter([
       element:<Bitcoin/>,
     },
     {
-      path:"converter",
-      element:<Converter/>,
+      path:"convert",
+      element:<Convert/>,
     },
   ]
   },
